@@ -1,0 +1,48 @@
+<!-- index.wxml -->
+<view class="home">
+  <view class="header">
+    <view class="placeholder"></view>
+    <view class="header-container">
+      <view class="header-left">
+        <view class="welcome">欢迎回来！</view>
+        <view class="location">
+          <image class="locationSvg" src="../../images/home/location.svg"></image>
+          <view class="address">
+            <text>湖南省</text>
+            <view class="dot">·</view>
+            <text>长沙市</text>
+          </view>
+        </view>
+      </view>
+      <view class="header-right">
+        <image class="sunny" src="../../images/home/sunny.svg"></image>
+        <text class="temperature">25℃</text>
+      </view>
+    </view>
+    <view class="search">
+      <van-search class="search-input" value="{{ searchValue }}" shape="round" background="transparent" placeholder="搜索景点、美食和购物" />
+    </view>
+    <view class="classify">
+      <view class="classify-item" wx:for="{{classify}}" wx:key="{{index}}">
+        <view class="item-image">
+          <image mode="widthFix" class="classify-image" wx:key="{{index}}" src="{{item.icon}}"></image>
+        </view>
+        <view class="classify-text">{{item.label}}</view>
+      </view>
+    </view>
+    <view class="spot">
+      <view class="spot-title">
+        <Text>热门景点</Text>
+      </view>
+      <!-- 卡片 -->
+      <view class="spot-card">
+        <scroll-view scroll-x="{{true}}" class="card-item" wx:for="{{spots}}">
+          <view wx:key="index">
+            <image class="spots-image" mode="widthFix" src="{{item.image}}"></image>
+          </view>
+          <view wx:key="index" class="spot-desc"></view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

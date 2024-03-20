@@ -1,0 +1,236 @@
+/* pages/home/index.wxss */
+
+.home {
+  width: 100%;
+  height: 100%;
+}
+
+.home .placeholder {
+  height: 73px;
+}
+
+.home .header-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.home .header {
+  position: relative;
+  padding: 0 21px;
+  height: 292px;
+  opacity: 1;
+  background: linear-gradient(180deg,
+      rgba(192, 211, 255, 0.5) 0%,
+      rgba(195, 210, 255, 0.5) 28.21%,
+      rgba(202, 209, 255, 0.5) 34.44%,
+      rgba(215, 206, 254, 0.5) 40.81%,
+      rgba(231, 202, 249, 0.5) 49.07%,
+      rgba(248, 198, 240, 0.5) 57.01%,
+      rgba(255, 194, 226, 0.5) 62.3%,
+      rgba(254, 195, 228, 0.5) 66.11%,
+      rgba(255, 214, 225, 0.5) 73.55%,
+      rgba(255, 232, 213, 0.33) 86.03%,
+      rgba(255, 255, 255, 0.19) 100%);
+}
+
+.home .welcome {
+  position: relative;
+  width: 125px;
+  height: 28px;
+  opacity: 1;
+  /** 文本1 */
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: rgba(50, 57, 67, 1);
+  text-align: left;
+  margin-bottom: 11px;
+}
+
+.home .locationSvg {
+  width: 12px;
+  height: 14px;
+  margin-right: 6px;
+}
+
+.home .location {
+  display: flex;
+  align-items: center;
+}
+
+.home .address {
+  display: flex;
+  align-items: center;
+  left: 20px;
+  top: 0px;
+  width: 110px;
+  height: 20px;
+  opacity: 1;
+  /** 文本1 */
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: rgba(105, 121, 248, 1);
+  text-align: left;
+  vertical-align: top;
+}
+
+.home .dot {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.home .cloudySvg {
+  position: absolute;
+  width: 38px;
+  height: 24px;
+  left: 15px;
+  top: 15px;
+}
+
+.home .sunSvg {
+  width: 34px;
+  height: 34px;
+}
+
+.home .header-left {
+  margin-right: 60px;
+}
+
+.home .header-right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.home .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 27px 0 30px 0;
+
+
+}
+
+.search-input {
+  width: 100%;
+  color: rgba(50, 57, 67, 0.44);
+
+}
+
+.sunny {
+  width: 70px;
+  height: 42px;
+}
+
+input {
+  font-size: 12px;
+}
+
+.home .van-icon-search {
+  color: rgba(96, 72, 195, 1);
+
+}
+
+.temperature {
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.classify {
+  display: flex;
+  justify-content: space-between;
+}
+
+.classify-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(50, 57, 67, 0.8);
+}
+
+.item-image {
+  left: 19px;
+  top: 230px;
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 5px rgba(226, 226, 226, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.classify-image {
+  width: 30px;
+}
+
+.classify-text {
+  left: 42px;
+  top: 312px;
+  width: 30px;
+  height: 22px;
+  opacity: 1;
+  /** 文本1 */
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 21.72px;
+  color: rgba(50, 57, 67, 0.8);
+  text-align: left;
+  vertical-align: top;
+}
+
+.spot {
+  margin: 24px 0;
+}
+
+
+.spot-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item {
+  margin-right: 6px;
+
+}
+
+.spot-title {
+  left: 0px;
+  top: 0px;
+  width: 80px;
+  height: 29px;
+  opacity: 1;
+  /** 文本1 */
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 28.96px;
+  color: rgba(50, 57, 67, 1);
+  text-align: left;
+  vertical-align: top;
+}
+
+.spots-image image {
+  width: 280px;
+}
+
+.spot-desc {
+  width: 280px;
+  height: 85.26px;
+  opacity: 1;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+
+}

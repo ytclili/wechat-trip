@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarBackgroundColor": "#2499f2",
+  "navigationBarTitleText": "aa",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index"
+  }
+}

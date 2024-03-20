@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/getOpenId/index",
+    "pages/getMiniProgramCode/index",
+    "pages/deployService/index",
+    "pages/createCollection/index",
+    "pages/uploadFile/index",
+    "pages/selectRecord/index",
+    "pages/updateRecord/index",
+    "pages/updateRecordResult/index",
+    "pages/updateRecordSuccess/index",
+    "pages/sumRecord/index",
+    "pages/sumRecordResult/index",
+    "pages/cloudBackend/index",
+    "pages/singleTemplate/index",
+    "pages/web/index",
+    "pages/home/index",
+    "pages/friend/index",
+    "pages/add/index",
+    "pages/chat/index",
+    "pages/my/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#BCD3FF",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/homeActive.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/friend/index",
+        "iconPath": "images/tabbar/friend.png",
+        "selectedIconPath": "images/tabbar/friendActive.png",
+        "text": "搭子"
+      },
+      {
+        "pagePath": "pages/add/index",
+        "iconPath": "images/tabbar/add.png",
+        "selectedIconPath": "images/tabbar/add.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/chat/index",
+        "iconPath": "images/tabbar/chat.png",
+        "selectedIconPath": "images/tabbar/chatActive.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "images/tabbar/my.png",
+        "selectedIconPath": "images/tabbar/myActive.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
