@@ -195,14 +195,28 @@ input {
 
 
 .spot-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  position: relative;
 }
 
 .card-item {
-  margin-right: 6px;
+  margin-right: 6rpx;
+  width: 100%;
 
+}
+
+.card-container {
+  position: relative;
+  width: 560rpx;
+  height: 300rpx;
+  display: inline-block;
+  margin-right: 10rpx;
+}
+
+
+
+.spot-imageContainer {
+  display: inline-block;
 }
 
 .spot-title {
@@ -221,16 +235,77 @@ input {
   vertical-align: top;
 }
 
-.spots-image image {
-  width: 280px;
+.spots-image {
+  width: 560rpx;
+  height: 300rpx;
+  display: inline-block;
+  margin-right: 10rpx;
+  border-radius: 10px 10px, 0px, 0px;
 }
 
 .spot-desc {
-  width: 280px;
-  height: 85.26px;
+  position: relative;
+  padding: 32rpx;
+  top: -20rpx;
+  left: 0;
+  width: 496rpx;
+  height: 127rpx;
   opacity: 1;
-  border-radius: 10px;
+  border-radius: 20rpx;
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
 
+.spot-tag {
+  width: 106rpx;
+  height: 48rpx;
+  position: absolute;
+  background-color: rgba(242, 187, 2, 1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #FFFFFF;
+  padding: 0 16rpx;
+  top: 32rpx;
+  left: 32rpx;
+}
+
+.star-svg {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.desc-tags {
+  display: flex;
+  align-items: center;
+}
+
+.desc-title {
+
+  width: 108rpx;
+  height: 54rpx;
+  opacity: 1;
+  /** 文本1 */
+  font-size: 36rox;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 54rpx;
+  color: rgba(0, 0, 0, 1);
+  text-align: left;
+  vertical-align: top;
+}
+
+.desc-tag {
+  display: flex;
+  align-items: center;
+  /* width: 144rpx; */
+  height: 48rpx;
+  opacity: 1;
+  border-radius: 8rpx;
+  background: rgba(106, 147, 250, 1);
+  color: #FFFFFF;
+  margin-right: 20rpx;
+  padding: 0 16rpx;
+  font-size: 24rpx;
 }

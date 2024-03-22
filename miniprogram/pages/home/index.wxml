@@ -23,9 +23,9 @@
       <van-search class="search-input" value="{{ searchValue }}" shape="round" background="transparent" placeholder="搜索景点、美食和购物" />
     </view>
     <view class="classify">
-      <view class="classify-item" wx:for="{{classify}}" wx:key="{{index}}">
+      <view class="classify-item" wx:for="{{classify}}" wx:key="index">
         <view class="item-image">
-          <image mode="widthFix" class="classify-image" wx:key="{{index}}" src="{{item.icon}}"></image>
+          <image mode="widthFix" class="classify-image" wx:key="index" src="{{item.icon}}"></image>
         </view>
         <view class="classify-text">{{item.label}}</view>
       </view>
@@ -35,14 +35,23 @@
         <Text>热门景点</Text>
       </view>
       <!-- 卡片 -->
-      <view class="spot-card">
-        <scroll-view scroll-x="{{true}}" class="card-item" wx:for="{{spots}}">
-          <view wx:key="index">
-            <image class="spots-image" mode="widthFix" src="{{item.image}}"></image>
+      <scroll-view scroll-x="true" scroll-y="{{true}}" class="scroll-card" style="white-space: nowrap;">
+        <view wx:for="{{spots}}" wx:key="index" class="spot-card">
+          <view class="card-container">
+            <image class="spots-image" src="{{item.image}}"></image>
+            <view class="spot-tag" color="rgba(242, 187, 2, 1)">
+              <view>{{item.rate}}</view>
+              <image class="star-svg" src="../../images/home/star.svg"></image>
+            </view>
           </view>
-          <view wx:key="index" class="spot-desc"></view>
-        </scroll-view>
-      </view>
+          <view class="spot-desc">
+            <view class="desc-title">{{item.address}}</view>
+            <view class="desc-tags">
+              <view class="desc-tag" wx:for-item="items" wx:for="{{item.tags}}">{{items}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
     </view>
   </view>
 </view>
