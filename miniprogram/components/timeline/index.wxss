@@ -1,0 +1,179 @@
+.timeline {
+    /* width: 100%; */
+    /* height: 100rpx; */
+    /* background-color: red; */
+    margin-left: 38rpx;
+    margin-right: 32rpx;
+}
+
+.item {
+    display: flex;
+}
+
+.left {}
+
+.right {
+    width: 100%;
+    position: relative;
+    top: -14rpx;
+}
+
+.dot {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    background: rgba(160, 92, 255, 1);
+    border-radius: 50%;
+    margin-right: 24rpx;
+}
+
+.dot::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 1px);
+    top: calc(50% + 4px);
+    /* 调整这里的值，使其与虚线点高度匹配 */
+
+    height: 200px;
+    width: 2px;
+    background-image: linear-gradient(to bottom, rgba(235, 240, 255, 1) 0%, rgba(235, 240, 255, 1) 2px, transparent 0px, transparent 10px);
+    background-size: 100% 6px;
+}
+
+.time {
+    margin-bottom: 24rpx;
+}
+
+.time-month {
+
+    height: 32rpx;
+    /** 文本1 */
+    font-size: 24rpx;
+    line-height: 32rpx;
+    color: rgba(51, 51, 51, 0.6);
+
+
+}
+
+.time-day {
+    height: 48rpx;
+    /** 文本1 */
+    font-size: 36rpx;
+    font-weight: 500;
+    line-height: 48rpx;
+    color: rgba(51, 51, 51, 1);
+    margin-right: 4rpx;
+}
+
+.tags {
+    margin-bottom: 24rpx;
+}
+
+.tag-item {
+    width: fit-content;
+    height: 42rpx;
+    display: flex;
+    align-items: center;
+    border-radius: 22px;
+    background: rgba(160, 92, 255, 0.1);
+    padding: 0rpx 12rpx 0rpx 12rpx;
+
+    /** 文本1 */
+    font-size: 24rpx;
+    line-height: 32rpx;
+    color: rgba(51, 51, 51, 1);
+}
+
+.tag-item image {
+    width: 24rpx;
+    height: 24rpx;
+    margin-right: 8rpx;
+}
+
+.desc {
+    height: 44rpx;
+    font-size: 32rpx;
+    line-height: 44rpx;
+    color: rgba(51, 51, 51, 1);
+}
+
+.my-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    /* 自动填充，每列最小50%宽度 */
+    grid-gap: 10px;
+    /* 图片间隔 */
+}
+
+.image-item {
+    width: 100%;
+}
+
+/* 根据图片数量不同添加不同的布局 */
+.one-image {
+    grid-template-columns: 100%;
+    /* 每个图片独占一行 */
+}
+
+.one-image-image-0 {
+    width: 100%;
+    border-radius: 16rpx;
+}
+
+.two-images {
+    grid-template-columns: repeat(2, 1fr);
+    /* 两个图片平分1行 */
+}
+
+.two-images-image-0 {
+    border-top-left-radius: 16rpx;
+    border-bottom-left-radius: 16rpx;
+}
+
+.two-images-image-1 {
+    border-top-right-radius: 16rpx;
+    border-bottom-right-radius: 16rpx;
+}
+
+.three-images {
+    /* grid-template-columns: 70% 25%; */
+
+    grid-template-columns: 100px 100px 100px;
+    /* grid-template-rows: 100px 100px 100px; */
+
+    /* 三个图片：一个占1行，另外两个占二分之一 */
+}
+
+
+
+.three-images-image-0 {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+}
+
+.three-images-image-1 {
+    width: 100%;
+    border-top-right-radius: 16rpx;
+    border-bottom-right-radius: 16rpx;
+}
+
+.three-images-image-2 {
+    width: 100%;
+    border-top-right-radius: 16rpx;
+    border-bottom-right-radius: 16rpx;
+}
+
+.four-images {
+    grid-template-columns: repeat(2, 1fr);
+    /* 四个图片：每个图片都占二分之一行和列 */
+}
+
+.four-images-image {
+    width: 100%;
+
+}

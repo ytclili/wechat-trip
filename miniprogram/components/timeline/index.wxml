@@ -1,0 +1,23 @@
+<view class="timeline">
+    <view wx:for="{{sourceData}}" wx:key="index" class="item">
+        <view class="left">
+            <view class="dot"></view>
+        </view>
+        <view class="right">
+            <view class="time">
+                <text class="time-day">{{item.day}}</text>
+                <text class="time-month">{{item.month}}月</text>
+            </view>
+            <view class="tags" wx:for="{{item.tags}}" wx:key="index1" wx:for-item="item1">
+                <view class="tag-item">
+                    <image src="{{item1.icon}}"></image>
+                    <Text>{{item1.text}}</Text>
+                </view>
+            </view>
+            <view class="desc">{{item.desc}}</view>
+            <view class='my-image {{layoutClasses[index]}}'>
+                <image mode="widthFix" class="image-item {{layoutClasses[index]}}-image-{{index1}}" src="{{item1}} " wx:for-item="item1" wx:for="{{item.imageArray}}" wx:key="index" wx:for-index="index1"></image>
+            </view>
+        </view>
+    </view>
+</view>

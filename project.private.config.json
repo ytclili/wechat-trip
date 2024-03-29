@@ -8,16 +8,17 @@
     "miniprogram": {
       "list": [
         {
-          "name": "home",
-          "pathName": "pages/home/index",
+          "name": "我的",
+          "pathName": "pages/my/index",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
-          "name": "pages/getOpenId/index",
-          "pathName": "pages/getOpenId/index",
+          "name": "home",
+          "pathName": "pages/home/index",
           "query": "",
+          "launchMode": "default",
           "scene": null
         },
         {

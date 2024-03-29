@@ -1,1 +1,40 @@
-<view class="" hover-class="none" hover-stop-propagation="false">mine</view>
+<view class="my">
+    <view class="my-header"></view>
+    <view class="header-info">
+        <view class="header-container">
+            <view class="image-container">
+                <image src="../../images/my/avatar.png"></image>
+            </view>
+            <view class="header-about">
+                <view class="about-item">
+                    <view class="item-number">168</view>
+                    <view class="item-text">我喜欢</view>
+                </view>
+                <view class="about-item">
+                    <view class="item-number">3.1K</view>
+                    <view class="item-text">喜欢我</view>
+                </view>
+                <view class="about-item">
+                    <view class="item-number">363</view>
+                    <view class="item-text">收到表态</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="user-info">
+        <view class="user-text">
+            <view class="user-name">文成瑶</view>
+            <view class="user-desc">下辈子谁还做设计啊</view>
+        </view>
+        <view class="user-handle">
+            <view class="user-edit">
+                <image src="../../images/my/edit.svg"></image>
+                <Text class="edit-text">编辑资料</Text>
+            </view>
+        </view>
+    </view>
+    <view class="user-tags">
+        <view class="items-tag" wx:for="{{userInfo.tags}}">{{item}}</view>
+    </view>
+    <timeline></timeline>
+</view>
