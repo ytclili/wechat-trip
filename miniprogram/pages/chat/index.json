@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
-  "component": true
+  "usingComponents": {
+    "my-header": "../../components/my-header/index",
+    "chat-card": "../../components/chat-card/index"
+  },
+  "navigationStyle": "custom"
 }

@@ -1,0 +1,15 @@
+<view class="card">
+    <view class="avatar {{chatUser.online ? 'avatar-status' : ''}}">
+        <image src="{{chatUser.avatar}}"></image>
+    </view>
+    <view class="content">
+        <view class="name">{{chatUser.username}}</view>
+        <view class="message">{{chatUser.message}}</view>
+    </view>
+    <view class="right">
+        <view class="time">{{chatUser.time}}</view>
+        <view class="badge" wx:if="{{chatUser.newMessageTotal > 0}}">
+            {{chatUser.newMessageTotal}}
+        </view>
+    </view>
+</view>

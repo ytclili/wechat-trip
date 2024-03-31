@@ -8,6 +8,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "聊天",
+          "pathName": "pages/chat/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "我的",
           "pathName": "pages/my/index",
           "query": "",
@@ -19,12 +26,6 @@
           "pathName": "pages/home/index",
           "query": "",
           "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "pages/deployService/index",
-          "pathName": "pages/deployService/index",
-          "query": "",
           "scene": null
         },
         {

@@ -1,1 +1,23 @@
-<view class="" hover-class="none" hover-stop-propagation="false">chat</view>
+<view>
+    <my-header height="200rpx"></my-header>
+    <view class="header">
+        <view></view>
+        <view class="header-text">
+            <view data-type="chat" class="header-chat  {{currentSelect === 'chat' ? 'header-current' : ''}}" bindtap="handleClick">
+                <view>聊天</view>
+                <image wx:if="{{currentSelect === 'chat'}}" src="../../images/chat/currentSelect.svg"></image>
+            </view>
+            <view class="header-list {{currentSelect === 'list' ? 'header-current' : ''}} " data-type="list" bindtap="handleClick">
+                <view>列表</view>
+                <image wx:if="{{currentSelect === 'list'}}" src="../../images/chat/currentSelect.svg"></image>
+            </view>
+            <view></view>
+        </view>
+        <view class="header-image">
+            <image src="../../images/chat/add.svg"></image>
+        </view>
+    </view>
+    <view class="chat-content" wx:for="{{chatUser}}" wx:key="index">
+        <chat-card chatUser="{{item}}"></chat-card>
+    </view>
+</view>

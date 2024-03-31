@@ -2,6 +2,7 @@
   "enablePullDownRefresh": true,
   "navigationStyle": "custom",
   "usingComponents": {
-    "timeline": "../../components/timeline/index"
+    "timeline": "../../components/timeline/index",
+    "my-header": "../../components/my-header/index"
   }
 }

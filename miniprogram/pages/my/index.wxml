@@ -1,5 +1,5 @@
 <view class="my">
-    <view class="my-header"></view>
+    <my-header></my-header>
     <view class="header-info">
         <view class="header-container">
             <view class="image-container">

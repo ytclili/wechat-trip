@@ -155,9 +155,9 @@ input {
 }
 
 .item-image {
-  left: 19px;
-  top: 230px;
-  width: 70px;
+  left: 38rpx;
+  top: 460rpx;
+  width: 140rpx;
   height: 70px;
   opacity: 1;
   border-radius: 18px;

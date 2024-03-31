@@ -1,1 +1,66 @@
 /* pages/chat/index.wxss */
+
+.header {
+    /* 清除了blur */
+    position: relative;
+    /* top: 196rpx; */
+    margin-top: 120rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48rpx;
+}
+
+.header-text {
+    display: flex;
+    height: 70rpx;
+}
+
+.header-chat {
+    /** 文本1 */
+    font-size: 36rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    line-height: 52rpx;
+    color: rgba(51, 51, 51, 1);
+    margin-right: 56rpx;
+}
+
+.header-chat image {
+    width: 28rpx;
+}
+
+.header-current {
+    font-weight: 600;
+    font-size: 40rpx;
+}
+
+.header-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /** 文本1 */
+    font-size: 36rpx;
+    line-height: 52rpx;
+    color: rgba(51, 51, 51, 1);
+}
+
+.header-list image {
+    width: 28rpx;
+}
+
+.header-image {
+    margin-right: 32rpx;
+}
+
+.header-image image {
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.chat-content {
+    margin-left: 32rpx;
+    margin-right: 32rpx;
+}

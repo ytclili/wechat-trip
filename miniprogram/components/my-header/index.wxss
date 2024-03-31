@@ -1,0 +1,10 @@
+.my-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    background: radial-gradient(circle at top left, #DCE2FC, transparent),
+        radial-gradient(circle at top right, #FFD796, transparent);
+    filter: blur(50rpx);
+}
